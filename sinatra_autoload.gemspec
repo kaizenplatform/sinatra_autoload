@@ -12,7 +12,6 @@ Gem::Specification.new do |s|
   s.date = %q{2009-10-30}
   s.description = %q{Do not load files into memory until they are accessed / needed inside your application.}
   s.email = %q{justin.smestad@gmail.com}
-  s.executables = ["autospec", "rackup", "rcov", "spec", "yard-graph", "yardoc", "yri"]
   s.extra_rdoc_files = [
     "LICENSE",
      "README.rdoc"
