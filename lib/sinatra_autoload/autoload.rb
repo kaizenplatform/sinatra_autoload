@@ -14,10 +14,11 @@ module SinatraAutoload
   def self.directories(*args)
     return unless args
     args.each do |file_path|
-      Dir[ File.join( @root_path, file_path, '/**/*.rb') ].each do |file|
+      Dir[ File.join( self.root_path, file_path, '/**/*.rb') ].each do |file|
         autoload File.basename(file, '.rb').classify.to_sym, file
       end
     end
   end
 
 end
+
